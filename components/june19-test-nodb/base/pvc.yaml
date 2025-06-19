@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/instance: june19-test-nodb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: june19-test-nodb
+  name: june19-test-nodb
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
